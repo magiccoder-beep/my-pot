@@ -26,6 +26,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { CommonLabel } from '@/components/common';
+import { downArrowImage, upArrowImage } from '@/consts';
 
 defineProps({
   options: Array<{ label: string; value: string }>,
@@ -36,19 +37,19 @@ defineProps({
 const isDropdownOpen = ref(false);
 const selectedOption = ref<string | null>(null);
 
-const dropdownArrowIconPath = ref('/src/assets/png/down-arrow.png');
+const dropdownArrowIconPath = ref(downArrowImage);
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
   dropdownArrowIconPath.value = isDropdownOpen.value
-    ? '/src/assets/png/up-arrow.png'
-    : '/src/assets/png/down-arrow.png';
+    ? upArrowImage
+    : downArrowImage;
 };
 
 const selectOption = (option: { label: string; value: string }) => {
   selectedOption.value = option.label;
   isDropdownOpen.value = false;
-  dropdownArrowIconPath.value = '/src/assets/png/down-arrow.png';
+  dropdownArrowIconPath.value = downArrowImage;
 };
 </script>
 

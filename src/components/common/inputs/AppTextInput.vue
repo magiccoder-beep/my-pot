@@ -15,7 +15,6 @@ defineProps({
 </script>
 
 <style>
-/* Text Input Container */
 .text-input-container {
   display: flex;
   flex-direction: column;
@@ -25,7 +24,6 @@ defineProps({
   width: 100%;
 }
 
-/* Text Input Styling */
 .text-input {
   background-color: transparent;
   border: none;

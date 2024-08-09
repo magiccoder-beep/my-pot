@@ -2,6 +2,8 @@ import type { FormInputData } from './types';
 
 import { INPUT_TYPES } from './common';
 import imageSrc from '@/assets/png/image1.png';
+import arrowDownImgSrc from '@/assets/png/down-arrow.png';
+import arrowUpImgSrc from '@/assets/png/up-arrow.png.png';
 
 export const FormDataItems_1: FormInputData[] = [
   {
@@ -134,3 +136,6 @@ export const ImageUrl = imageSrc;
 export const ImageAltText = 'Image';
 
 export const StartAssessmentButtonText = 'Start Assessment';
+
+export const downArrowImage = arrowDownImgSrc;
+export const upArrowImage = arrowUpImgSrc;
