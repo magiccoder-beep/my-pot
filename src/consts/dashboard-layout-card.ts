@@ -3,7 +3,7 @@ import type { FormInputData } from './types';
 import { INPUT_TYPES } from './common';
 import imageSrc from '@/assets/png/image1.png';
 import arrowDownImgSrc from '@/assets/png/down-arrow.png';
-import arrowUpImgSrc from '@/assets/png/up-arrow.png.png';
+import arrowUpImgSrc from '@/assets/png/up-arrow.png';
 
 export const FormDataItems_1: FormInputData[] = [
   {
